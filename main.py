@@ -31,11 +31,10 @@ with st.sidebar:
     st.header("⚙️ Configuration")
     
     # Ollama configuration - ALWAYS keep secret, never display
-    ollama_url = "http://205.147.102.125:11434"
-    # ollama_url = st.secrets.get("OLLAMA_URL", "http://205.147.102.125:11434")
+    ollama_url = st.secrets.get("OLLAMA_URL", "http://localhost:11434")
     
     # Model configuration (visible to user)
-    st.info(f"🤖 Model: llama3.1:70B")
+    # st.info(f"🤖 Model: llama3.1:70B")
     model_name = "llama3.1:70B"
     temperature = 0.1
     
